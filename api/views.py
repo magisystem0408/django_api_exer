@@ -33,7 +33,7 @@ class TaskListView(generics.ListAPIView):
     permission_classes =(AllowAny,)
 
 
-class TaskDatailView(generics.RetrieveAPIView):
+class TaskDetailView(generics.RetrieveAPIView):
     queryset =Task.objects.all()
     serializer_class =TaskSerializer
     permission_classes =(AllowAny,)
